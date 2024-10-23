@@ -1,0 +1,98 @@
+
+/project-root
+    /css
+        style.css  (your CSS file)
+    /images
+        background.jpg  (the background image)
+        logo.jpg  (the logo image)
+    index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Google and Facebook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Image -->
+        <img src="images/logo.jpg" alt="Logo" class="logo">
+
+        <h1>Login to Access Free Fire Gems</h1>
+
+        <!-- Google and Facebook Buttons -->
+        <button class="google" id="googleBtn">Login with Google</button>
+        <button class="facebook" id="facebookBtn">Login with Facebook</button>
+    </div>
+
+    <script>
+        // Google Login
+        document.getElementById('googleBtn').addEventListener('click', function() {
+            alert('Google login functionality to be implemented.');
+        });
+
+        // Facebook Login
+        document.getElementById('facebookBtn').addEventListener('click', function() {
+            alert('Facebook login functionality to be implemented.');
+        });
+    </script>
+</body>
+</html>
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for login elements */
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Logo styling */
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Headline */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Google button */
+.google {
+    background-color: #db4437;
+}
+
+/* Facebook button */
+.facebook {
+    background-color: #3b5998;
+}
